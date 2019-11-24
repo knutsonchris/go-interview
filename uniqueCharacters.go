@@ -22,7 +22,7 @@ func uniqueCharacters(input string) bool {
 
 		// check our map for the existance of this rune (ok will be true if it exists)
 		if _, ok := hash[c]; ok {
-			fmt.Printf("Found duplicate character \nrune value: %d\nstring value: %s", c, strconv.QuoteRune(c))
+			fmt.Printf("Found duplicate character \nrune value: %d\nstring value: %s\n", c, strconv.QuoteRune(c))
 			// we have encountered a duplicate character, so we can end iteration immediatly and return false
 			return false
 		}
